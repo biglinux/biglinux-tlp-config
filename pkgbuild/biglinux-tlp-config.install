@@ -5,9 +5,9 @@
 
 ## arg 1:  the new package version
 post_install() {
-	if [ ! -e /etc/tlp.conf ];then
+#	if [ ! -e /etc/tlp.conf ];then
 		cp /etc/tlp-biglinux.conf /etc/tlp.conf
-	fi
+#	fi
 	systemctl enable --now tlp.service
 }
 ## arg 2:  the old package version
