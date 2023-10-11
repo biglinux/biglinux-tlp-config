@@ -8,7 +8,7 @@ post_install() {
 #	if [ ! -e /etc/tlp.conf ];then
 		cp /etc/tlp-biglinux.conf /etc/tlp.conf
 #	fi
-	systemctl enable --now tlp.service
+	systemctl enable tlp.service
 }
 ## arg 2:  the old package version
 #pre_upgrade() {
